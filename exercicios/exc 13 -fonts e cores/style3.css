@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* em html é 'id' ,em css é '#' 
+em html é 'class', em css é '.' */
+
+
+body{
+    background-color:  #b8d4bc;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1#titulo {
+   
+    text-align: center;
+    background-color: #426f42;
+    
+    color: #d6dfe7;
+    border-radius: 3px;
+    
+
+}
+h1{
+    color: #162f16;
+}
+h2{
+    color: #365b36;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: rgb(28, 32, 29);
+}
+.basico{
+    color: #a36750;
+}
+.intermediario{
+    color: #5450a3;
+}
+.avançado{
+    color: #a37c50
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags em html</title>
+    <style>
+        :root {
+            --cor0: #c5ebd6;
+            --cor1: #83e1ad;
+            --cor2: #3ddc84;
+            --cor3: #2fa866;
+            --cor4: #1a5c37;
+            --cor5: #063d1e;
+            --fonte0: arial, helvetica, sans-serif;
+            --fonte1: 'Bebas Neue', cursive;
+            --fonte2: 'android', sans-serif;
+        }
+        body{
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+        nav{
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 
+            4px 3px 6px 1px #3b3a3a61;
+            border-radius: 3px;
+        }
+
+        header {
+        
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            margin-right: 30px;
+            font-family: var(--fonte1);
+           
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            
+            
+           
+        }
+
+        main {
+           
+            background-color:#ffffff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px 3px 3px;
+            box-shadow: 4px 3px 8px #25242454;
+
+        }
+        article > p{
+            text-align: justify;
+        }
+        #noticias{
+            background-color: #dfdfdf;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        h1{
+            text-align: center;
+            font-family:var(--fonte0);
+        }
+        h2{
+            font-family: var(--fonte0);
+        }
+        aside > p {
+            background-color: #434141;
+            color: white;
+            font-weight: lighter;
+            border-radius: 2px;
+           
+        }
+       
+        footer{
+            background-color: black;
+            color: #ffffffcd;
+            text-align: center;
+            font-weight: lighter;
+            font-family: 'android';
+            padding: 4px;
+            margin: 0px;
+            border-radius: 3px;
+            
+            
+           
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="assuntos" >
+            <p>Esportes política e sexo</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias do Brasil e do mundo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia est, perferendis iusto accusamus vitae sed sint recusandae rem suscipit, sunt, corporis eveniet tempore provident sequi fugit labore. Rerum, repellat laboriosam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quis sit reprehenderit, dolorem alias quisquam ut, deserunt voluptatem nemo eius voluptatibus assumenda ea incidunt quidem inventore impedit deleniti, velit tempora!
+                </p>
+                <aside>
+                    <p><em>autor: artigo escrito por toinho melado</em></p>
+    
+                </aside>
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+       Aprendendo e sofrendo!
+
+    </footer>
+</body>
+
+</html>

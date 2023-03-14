@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--a forma correta de usar formatação em html é com o parametro <style>  como abaixo-->
+    <style>
+       mark{
+    background-color: rgb(125, 204, 158);
+}
+    </style>
+</head>
+<body>
+    <h2>tags que não mais se adequão em HTML</h2>
+
+<!--tag como <b> e <i> por terem caracteristicas de formatação e não de semântica em html, foram subistituidas por, respectivamente: <strong> e <em> -->
+    agora, testando em <i>itálico</i> e em <b>Negrito</b>, seguida da tag EM; <em>o que essa faz?</em>
+    <p> testando formatão negrito <strong>este trexo ficará em negrito</strong></p>
+
+    <!--e para formatar aspecto do texto na página index, usa-se a tag parametro'style',esta,tem seu uso mais apropriado na 'head'da página -->
+<hr>
+    <p>usando caracteristica de CSS para formatar cor de marcado <mark style="background-color: rgb(82, 209, 231);">aqui</mark>
+    </p>
+
+    <p>quando necessário deixar reduzido: <small>o trecho fica assim</small></p>
+
+    <p>para que se sublinhe: <ins>o trecho ficará assim</ins>
+    </p>
+
+    <p>para escrever coisa do tipo: x<sup>20</sup>+3 ou assim:H<sub>2</sub>O</p>
+    <h2>Outras formatações</h2>
+      <h3>código fonte/pre formatações</h3>
+
+      <!--o comando <code> é usado quando necessário descrever linhas em formatação de código em um leyout de texto comum. observe os paragrafos logo abaixo..-->
+
+        <p>o comando <code>document.getElementbyid</code> é escrito em linguagem java</p>
+     
+        <!--o comando 'pre' tem sua caracteristica em manter a formatação do texto exatamente como foi escrita -->
+        <pre>
+            <code>
+                num = int(input('digite um número'))
+                if num %2 ==0:
+                     print(f'O número {num} é par')
+                else:
+                    print(f'O número {num} é impar)
+                print('fimdo programa')
+            </code>
+        </pre>   
+    <hr>
+    <h2>Citações: simples e completas</h2>
+        <!--quando necéssario inserir uma descrição em um texto, frase seja de livro ou autoria, usa-se a tag <q>-->
+        <p>1 - Como diria o meu pai: <q>computador é um burro veloz</q></p>
+         
+        <p>2 - Segundo Jeff Noble, no llivro HTML para leigos</p>
+
+        <!--também, quando necessário citar obra e autor o uso da tag 'blockquote' é recomendada, pois citação e referência ao autor ficam , digamos.. anexadas.-->
+
+        <blockquote cite="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html">
+        Esse é um exemplo de tag cuja disposição na tela se dá em forma de bloco, ou seja, um parágrafo é posto sempre abaixo do outro. O código da Listagem 3 adiciona três parágrafos, que podem ser visualizados na Figura 2.</blockquote>
+
+        <h2> Abreviações</h2>
+        <!--usado para criar pop up de descrição em abreviações; daí, ao passar o mouse sobre a abreviação sua descrição aparecerá-->
+         <p>estou estudando <abbr title="hyper text markap linguage">HTML</abbr> e <abbr title="cascading style sheets">CSS</abbr>, estou escitado! </p>
+</body>
+</html>

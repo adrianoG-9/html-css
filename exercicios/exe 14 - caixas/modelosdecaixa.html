@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in-line e box level</title>
+    <style>
+h1{
+    background-color: rgb(168, 173, 168);
+    height: 300px;
+    width: 300px;
+
+    /* shorthand no 'border' */
+    border: 10px solid darkslategray;
+    
+
+    /* ..também, um shorthand no 'padding'- obs: quando os valores para as dimenssões forem iguais, basta declarar esse valor uma única vez. tanto o top,right,bottom e left serão preenchidos com esse valor. logo:
+
+    padding-top;
+    paddding-right;
+    padding-bottom;
+    padding-left;
+    
+    será descrito como está abaixo..*/
+    padding: 10px;
+
+    /* outro shorthand..  agora no 'margin' - obs: ao usar um shorthand na configuração de caixas, a ordem para descrição será no sentido horário, começando do top. logo: top; right; bottom; left. Já para centralizar a caixa de modo responsivo usa-se o valor AUTO*/
+    margin: 20px auto 40px auto;
+}
+
+a{
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+
+    padding: 10px;
+
+    /* é possível alternar o tipo de caixa que se prentende usar com a tag 'display' entre os valores: BLOCK(box-level), ou INLINE(inline-level) */
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>exemplos de caixas box-level</h1>
+    <p>paragrafos também são exemplos de box level, mas os ,<a href="a">link para exemplo de caixa inline-level</a>vamos ver como funciona</p>
+    
+</body>
+</html>
