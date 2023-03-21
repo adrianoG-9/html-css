@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando verticalmente</title>
+    <style>
+         
+         /* para manipular(alinhamento) posicionamento vertical de DIV's hieraquizadas(filho) relativa com a pai, é preciso que a div pai tenha a tag 'position' e sua declarção com valor 'relative'. já sua div filha terá position com valor 'absolute'  */
+
+        #container{
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: brown;
+            background-image: url(imagem/target001.png);
+            background-size: 100% 100%;
+
+        }
+
+         /* ..Uma vez definido o 'position: absolute;' na div filha será possível usar as tags 'left' e 'top' determinando valores positivo(+) ou negativo(-) para manipular a posição dessa div com seu plano de fundo. Outra maneira para o mesmo resultado é usando a tag 'transform' e em seu valor: 'translate ()', e aqui, também será dado dois valores entre positivos e negativos; o primeiro valor para mover horizontalmente, o segundo valor moverá a div verticalmente. obs: separe os valores por vírgula */
+
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellowgreen;
+            background-image: url(imagem/target001.png);
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+        </article>
+    </section>
+</body>
+</html>
