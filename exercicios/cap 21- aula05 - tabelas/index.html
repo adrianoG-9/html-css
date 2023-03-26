@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anatomia de tabelas</title>
+
+    <style>
+        caption{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: grey;
+            color: bisque;
+           font-family: Arial, Helvetica, sans-serif;
+            padding: 3px;
+        
+           
+        }
+        thead, tfoot{
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .titulo{
+            color: rgb(229, 223, 235);
+            background-color: rgb(43, 40, 40);
+        }
+        .grey{
+            background-color: rgba(137, 128, 128, 0.449);
+        }
+        .numb{
+            text-align: right;
+        }
+        
+    
+    </style>
+
+</head>
+<body>
+    <table>
+        <caption>Religião no brasil</caption>
+        <thead>
+            <tr>
+                <th class="titulo">Religião</th>
+                <th class="titulo">Número de seguidores</th>
+                <th class="titulo">Percentagem da populção total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="grey">
+                <td>Cirstianismo</td>
+                <td class="numb">193 890 494</td>
+                <td class="numb">88.9%</td>
+            </tr>
+            <tr> 
+                <td>Sem religião</td>
+                <td class="numb">17 229 864</td>
+                <td class="numb">7.9%</td>
+            </tr>
+            <tr class="grey">
+                <td>Religião popular</td>
+                <td class="numb">6 106 787</td>
+                <td class="numb">2.8%</td>
+            </tr>
+            <tr>
+                <td>budismo</td>
+                <td class="numb">218 100</td>
+                <td class="numb">0.1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Outros</td>
+                <td class="numb">654 299</td>
+                <td class="numb">0.3%</td>
+            </tr>     
+
+        </tbody>
+        <tfoot>
+            <th class="titulo">Número total, soma aí!</th>
+        </tfoot>
+    </table>
+        
+
+
+
+
+
+
+</body>
+</html>
