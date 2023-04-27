@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input e formulários</title>
+</head>
+<body>
+    <h1>imprementando formulários</h1>
+
+<form action="cadastro.php" method="post">
+    <div>
+        <fieldset>
+            <legend>Dados do usuário</legend>
+        <label for="usuario">Nome</label>
+        <input type="text" name="usur" id="usuario" minlength="10" maxlength="20" size="35" title="Forneça seu nome completo" placeholder="Seu nome aqui.."  required >
+        <br>
+        <br>
+        <label for="nasc">Nascido em</label>
+        <input type="date">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" name="emai" id="email" maxlength="25" minlength="8"
+        size="30" placeholder="@SeuEmail">
+        <br>
+        <br>
+        <label for="istate">informe o estado</label>
+        <select name="estados" id="istate">
+            <option value="SP">São Paulo</option>
+            <option value="CE">Ceará</option>
+            <option value="AM">Amazonas</option>
+        </select> <br><br>
+
+        <!-- quando necessário deixar um input de seleção, mas com opção de inserir nova opção pelo usuário, ao formulário use 'datalist' -->
+
+        <label for="ijob">selecione profissão</label>
+        <input type="text" name="profissao" id="ijob" list="listprof">
+        <datalist id="listprof">
+            <option >matador</option>
+            <option >cafetão</option>
+            <option >puta</option>
+        </datalist>
+    </fieldset>
+    <br>
+    <button type="reset">Limpar</button>
+    <button type="submit">Enviar</button>
+    </div>
+
+</form>
+</body>
+</html>
