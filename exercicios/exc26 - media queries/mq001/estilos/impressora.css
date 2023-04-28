@@ -1,0 +1,29 @@
+@charset "UTF-8"
+/* estilo para impressoras*/
+
+.{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article {
+    width:100%;
+}
+
+article::after{
+    
+    font-size: smaller;
+    font-style: italic;
+    content: 'Este artigo é uma aula sobre media query';
+}

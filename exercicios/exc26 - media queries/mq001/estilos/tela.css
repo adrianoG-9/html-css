@@ -1,0 +1,29 @@
+@charset "UTF-8"
+/* estilo para telas */
+
+.{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul{
+    width: 80%;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.667);
+}
+li{
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
