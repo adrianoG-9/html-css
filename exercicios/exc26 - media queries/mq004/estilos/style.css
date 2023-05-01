@@ -4,7 +4,7 @@
 
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -22,10 +22,20 @@ h1{
     height: 100vh;
 }
 
-body{
-    background: black url(../img/back-phone.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+@media screen and (orientation: portrait){
+    body{
+        background: black url(../img/back-phone.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media screen and(orientation: landscape){
+    body{
+        background: black url(../img/back-phone.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 }
 
 main{
