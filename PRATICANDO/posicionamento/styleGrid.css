@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+html, body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background: rgb(99, 70, 116);  
+  }
+  
+  header{
+    background: red;
+   
+   /* 
+    grid-column-start: 1;  -  [ Aqui declarei onde inicia a a área que o header ocupará; sendo então na primeira linha. O 'grid-column-end' informa a linha final ] 
+    grid-column-end: 3;   */
+    grid-area: header;  
+
+  }
+  main{
+    background: rgb(2, 137, 38);
+    
+   /* 
+    grid-column-start: 1;
+    grid-column-end: 2; OU 
+    grid-column: 1/2; */
+    grid-area: main;
+  }
+  aside{
+    background: blue;
+    
+   /* 
+    grid-column-start: 2;
+    grid-column-end: 3; OU 
+    grid-column: 2/3; */
+    grid-area: aside;
+  }
+  footer{
+    background: orange;
+    
+   /* grid-column-start: 1;
+    grid-column-end: 3; OU 
+    grid-column: 1/3; */
+    grid-area: footer;
+  }
+  
+  .container{
+    display:grid;
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows: 20vh 70vh 10vh;    /* [ EXPLICAÇÃO: 'fr' refere-se a fração(parte). Então, aqui foram descritas duas colunas(1° 3fr) e (2° 1fr). Também, descreve que a 1° ocupará três partes da V W, e a 2°, só uma parte ] */
+   
+   /* 
+   grid-gap: 20px ;  
+   -  [ EXPLICAÇÃO: O 'GAP' coloca espaços entre colunas e linhas. informando um único valor, vale para coluna e linha; dois valores, será uma para coluna outro para linha ] 
+    */
+    grid-template-areas: "header header" "main aside"
+    "footer footer";  /* [ Aqui, no CONTAINER, informamos - seguindo a ordem de cada div semântica - quais colunas cada campo irá ocupar. Depois, nos ITENS, na 'grid-area: ;' informamos seu nome. */
+  }
