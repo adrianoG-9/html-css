@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{
+    width: auto;
+    padding: 0;
+    box-sizing: border-box; 
+    margin: 0;  
+}
+
+
+header{
+    height: 4.5em;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e2862ba2;
+    box-shadow: 1px 2px 4px #46210134;
+    padding: 0 10%;   
+} 
+
+.img_logo{
+    width: 100px;
+    cursor: pointer;
+}
+   
+
+nav li{
+    visibility: hidden;
+    display: inline-block;
+    padding: 0px 20px;
+    
+
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+}
+nav li a:hover{
+    color: #1a0d0db7;
+    transition:all .5s ease .1s;
+}
+
+.imenu{
+    
+    color: #1a0d0db7;
+    cursor: pointer;
+   
+}
+
+
+html,body{
+    width: auto;
+    height: auto;
+    background-image: url('../img/planofund.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(254, 153, 22, 0.807);
+}
