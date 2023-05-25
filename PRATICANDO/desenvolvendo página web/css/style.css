@@ -9,6 +9,8 @@
 
 
 header{
+    width: 100%;
+    position: absolute;
     height: 4.5em;   
     display: flex;
     flex-direction: row;
@@ -16,7 +18,8 @@ header{
     justify-content: space-between;
     background-color: #e2862ba2;
     box-shadow: 1px 2px 4px #46210134;
-    padding: 0 10%;   
+    padding: 0 10%;  
+    z-index: 100000; 
 } 
 
 .img_logo{
@@ -50,13 +53,37 @@ nav li a:hover{
    
 }
 
-
 html,body{
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient( to bottom, #ffa32ace, #e69b39ce );
+}
+/*main{
     width: auto;
-    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40vh 50vh; 
+
+}*/
+.fundo_destaque{
+    position: relative;
+    width: 100%;
+    height: 940px;
     background-image: url('../img/planofund.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center right;
     background-size: cover;
-    background-color: rgba(254, 153, 22, 0.807);
+    overflow: hidden;      
+}
+
+.dir_table{
+    width: 80vw;
+    height: 40vh;
+    background-color: rgba(138, 80, 29, 0.593);
+    position: relative;
+    top: -600px;
+    right: -30px;
+    border-radius: 10px;
+    padding: 10px;
+    
 }
